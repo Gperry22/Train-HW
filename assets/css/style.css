@@ -1,0 +1,51 @@
+body {
+  background-image: url("../../assets/images/bg1.jpg");
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*.blink provide blicking animation */
+
+.blink {
+  animation: blinker 1.5s linear infinite;
+}
+
+/*.blink provide blicking animation when timer is <10 seconds */
+
+.blink1 {
+  animation: blinker 2s linear infinite;
+  /* color: red; */
+  background-color: #FEF1B5;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+tbody tr:hover {
+  background-color: #D3D3D3;
+}
+
+.lessThan4 {
+  background-color: #a2c0d9;
+}
+
+.gpmargin {
+  margin-left: 20px;
+}
+
+.cardBG {
+  background-color: #D3D3D3;
+  opacity: 9;
+}
+
+.jumbotronStyle {
+  background-color: #D3D3D3;
+  opacity: 0.8;
+  font-size: 100px;
+  font-weight: 600;
+}

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title> Train Homework </title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+
+</head>
+
+<body>
+  <div class="jumbotron text-center jumbotronStyle">
+    <p>The Dark Tower <span style="font-style:italic; color:#315a7d">Express</span></p>
+    <h4 id="currentTime"></h4>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="card">
+          <div class="card-header cardBG">
+            <h4>Train Depatures</h4>
+          </div>
+          <div class="card-block">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th id="trainNameDisplay">Train Name</th>
+                  <th id="destinationDisplay">Destination</th>
+                  <th id="frequencyDisplay">Frequency</th>
+                  <th id="nextArrivalDisplay">Next Arrival</th>
+                  <th id="minsAwayDisplay">Mins Away</th>
+                  <th id="removeDisplay">Remove</th>
+                </tr>
+              </thead>
+              <tbody id="trainTableRows">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-header cardBG">
+            <h5>Add A Train</h5>
+          </div>
+          <div class="card-block">
+            <form class="form-group" action="index.html" method="post">
+              <div class="form-group form-control">
+                <label for="TrainName">Train Name</label>
+                <input type="text" id="trainNameInput" name="" value="" placeholder="Train Name" class="text-center form-control">
+                <label for="Destination">Destination</label>
+                <input type="text" id="destinationInput" name="" value="" placeholder="Destination" class="text-center form-control">
+                <label for="">First Arrival</label>
+                <input type="TIME" id="firstStartInput" name="" value="" placeholder="HH:mm" class="text-center form-control" maxlength="5">
+                <label for="Frequency">Frequency(mins)</label>
+                <select class="form-control" id="frequencyInput">
+                <option value="5">5</option>
+                <option>10</option>
+                <option>15</option>
+                <option>20</option>
+                <option>25</option>
+                <option>30</option>
+                <option>35</option>
+                <option>40</option>
+                <option>45</option>
+                <option>50</option>
+                <option>55</option>
+                <option>60</option>
+                <option>90</option>
+                <option>120</option>
+                <option>180</option>
+                <option>240</option>
+                <option>300</option>
+                <option>360</option>
+                <option>720</option>
+                <option>1440</option>
+                </select> <br>
+                <button type="submit" id="submitBtn" name="button" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="assets/javascript/javascript.js" type="text/javascript"></script>
+
+</body>
+
+</html>
